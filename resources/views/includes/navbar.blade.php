@@ -5,7 +5,7 @@
     >
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="./images/logo.svg" alt="" />
+          <img src="{{ asset('./images/logo.svg') }}" alt="" />
         </a>
         <button
           class="navbar-toggler"
@@ -24,7 +24,7 @@
               <a class="nav-link" href="/">Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categories.html">Categories</a>
+              <a class="nav-link" href="{{ url('/category') }}">Categories</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Rewards</a>

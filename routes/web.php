@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DetailController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +18,9 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/category', [CategoryController::class, 'index']);
+Route::get('/detail/{id}', [DetailController::class, 'index']);
 
 Route::get('/debug-sentry', function () {
     throw new Exception('My first Sentry error!');
