@@ -32,6 +32,8 @@ Route::get('/register/success', [RegisterController::class, 'success'])->name('r
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/dashboard-products', [DashboardProductController::class, 'index']);
+Route::get('/dashboard/products/create', [DashboardProductController::class, 'create']);
+Route::get('/dashboard/products/{id}', [DashboardProductController::class, 'detail']);
 
 Route::get('/debug-sentry', function () {
     throw new Exception('My first Sentry error!');

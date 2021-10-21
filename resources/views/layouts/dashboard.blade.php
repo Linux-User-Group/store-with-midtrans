@@ -11,7 +11,7 @@
 
     @stack('prepend-style')
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="./style/main.css" rel="stylesheet" />
+    <link href="/style/main.css" rel="stylesheet" />
     @stack('addon-style')
 </head>
 
@@ -21,7 +21,7 @@
             <!-- Sidebar -->
             <div class="border-right" id="sidebar-wrapper">
                 <div class="sidebar-heading text-center">
-                    <img src="./images/dashboard-store-logo.svg" alt="" class="my-4" />
+                    <img src="/images/dashboard-store-logo.svg" alt="" class="my-4" />
                 </div>
                 <div class="list-group list-group-flush">
                     <a href="{{ url('/dashboard') }}" class="list-group-item list-group-item-action">Dashboard</a>
@@ -46,12 +46,14 @@
         AOS.init();
     </script>
     <!-- Menu Toggle Script -->
+    @stack('prepend-script')
     <script>
         $("#menu-toggle").click(function(e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
     </script>
+    @stack('addon-script')
 </body>
 
 </html>
