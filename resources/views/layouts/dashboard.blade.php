@@ -26,8 +26,8 @@
                 <div class="list-group list-group-flush">
                     <a href="{{ url('/dashboard') }}" class="list-group-item list-group-item-action">Dashboard</a>
                     <a href="{{ url('/dashboard-products') }}" class="list-group-item list-group-item-action">My Products</a>
-                    <a href="dashboard-transactions.html" class="list-group-item list-group-item-action">Transactions</a>
-                    <a href="dashboard-settings.html" class="list-group-item list-group-item-action">Store Settings</a>
+                    <a href="{{ url('/dashboard/transactions') }}" class="list-group-item list-group-item-action">Transactions</a>
+                    <a href="{{ url('/dashboard/setting') }}" class="list-group-item list-group-item-action">Store Settings</a>
                     <a href="dashboard-account.html" class="list-group-item list-group-item-action">My Account</a>
                 </div>
             </div>
