@@ -28,9 +28,10 @@ Route::get('/dashboard/products/create', [DashboardProductController::class, 'cr
 Route::get('/dashboard/products/{id}', [DashboardProductController::class, 'detail']);
 
 Route::get('/dashboard/transactions', [DashboardTransactionController::class, 'index']);
-Route::get('/dashboard/transactions/detail', [DashboardTransactionController::class, 'details']);
+Route::get('/dashboard/transactions/{id}', [DashboardTransactionController::class, 'details']);
 
 Route::get('/dashboard/setting', [DashboardSettingController::class, 'index']);
+Route::get('/dashboard/account', [DashboardSettingController::class, 'account']);
 
 Route::get('/debug-sentry', function () {
     throw new Exception('My first Sentry error!');
