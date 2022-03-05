@@ -1,21 +1,41 @@
 .page-details {
   h5 {
-    color: #0c0d36;
+    font-weight: normal;
     font-size: 18px;
-    font-weight: 300;
+    color: #0c0d36;
   }
+
+  .store-gallery {
+    margin-top: 20px;
+
+    img {
+      border-radius: 10px;
+    }
+
+    .thumbnail-image {
+      margin-bottom: 20px;
+      border: 2px solid transparent;
+
+      &:hover,
+      &.active {
+        border: 2px solid #ff7158;
+      }
+    }
+  }
+
   .store-heading {
     margin-bottom: 10px;
 
     h1 {
+      font-weight: normal;
       font-size: 24px;
       line-height: 36px;
-      margin-bottom: 0px;
       color: #0c0d36;
+      margin-bottom: 0px;
     }
 
     .owner {
-      font-weight: 200;
+      font-weight: normal;
       font-size: 14px;
       line-height: 21px;
       color: #979797;
@@ -31,29 +51,13 @@
     }
   }
 
-  .store-gallery {
-    margin-bottom: 20px;
-
-    img {
-      border-radius: 10px;
-    }
-
-    .thumbnail-image {
-      margin-bottom: 20px;
-      border: 2px solid transparent;
-      &:hover,
-      &.active {
-        border: 2px solid #ff7158;
-      }
-    }
-  }
   .store-description {
-    p {
-      font-size: 16px;
-      color: #525252;
-      line-height: 180%;
-    }
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    color: #525252;
   }
+
   .store-review {
     .media {
       img {
@@ -61,14 +65,15 @@
       }
     }
     .media-body {
+      font-weight: normal;
       font-size: 16px;
       line-height: 180%;
       color: #525252;
+      margin-bottom: 20px;
 
       h5 {
-        font-weight: 300;
+        font-weight: 500;
         font-size: 16px;
-        line-height: 180%;
         color: #0c0d36;
       }
     }

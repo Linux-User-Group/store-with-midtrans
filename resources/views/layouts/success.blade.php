@@ -12,7 +12,7 @@
     <title>@yield('title')</title>
 
     {{-- Style --}}
-    @stack('prepend-syle')
+    @stack('prepend-style')
     @include('includes.style')
     @stack('addon-style')
 
@@ -20,16 +20,15 @@
 
   <body>
 
-    <!-- Page Content -->
+    {{-- Page Content --}}
     @yield('content')
 
     {{-- Footer --}}
     @include('includes.footer')
-    
+
     {{-- Script --}}
     @stack('prepend-script')
     @include('includes.script')
     @stack('addon-script')
-    
   </body>
 </html>
